@@ -9,7 +9,7 @@ import FeatureCardTwentyOne from "@/components/sections/feature/FeatureCardTwent
 import TestimonialCardTwo from "@/components/sections/testimonial/TestimonialCardTwo";
 import ContactCTA from "@/components/sections/contact/ContactCTA";
 import FooterLogoReveal from "@/components/sections/footer/FooterLogoReveal";
-import { Award, CheckCircle, Sparkles, Star, Heart } from "lucide-react";
+import { Award, CheckCircle, Sparkles, Star, Heart, MapPin, Clock, Phone } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -167,10 +167,10 @@ export default function LandingPage() {
           tag="Ready to Indulge?"
           tagIcon={Heart}
           title="Visit A mi manera Today"
-          description="Stop by our bakery to experience the magic firsthand. Enjoy a fresh pastry with our signature coffee, or order ahead for your next celebration."
+          description="Stop by our bakery at 123 Pastry Lane, Downtown. Open Monday–Saturday, 7 AM–7 PM; Sunday, 8 AM–5 PM. Order ahead by phone at (555) 123-4567 or visit our location on Google Maps. Enjoy a fresh pastry with our signature coffee, or reserve for your next celebration."
           buttons={[
             { text: "Reserve Online", href: "https://example.com/reserve" },
-            { text: "Call Us", href: "tel:+1234567890" },
+            { text: "Call Us", href: "tel:+15551234567" },
           ]}
           background={{ variant: "plain" }}
           useInvertedBackground={false}
