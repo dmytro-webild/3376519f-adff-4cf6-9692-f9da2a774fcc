@@ -1,57 +1,20 @@
 import type { Metadata } from "next";
-import { Raleway } from "next/font/google";
-import { Halant } from "next/font/google";
 import { Inter } from "next/font/google";
-import "./globals.css";
-import { ServiceWrapper } from "@/components/ServiceWrapper";
-import Tag from "@/tag/Tag";
+import "@/styles/globals.css";
 
-const raleway = Raleway({
-  variable: "--font-raleway",  subsets: ["latin"],
-});
-
-const halant = Halant({
-  variable: "--font-halant",  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",  subsets: ["latin"],
-});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "A mi manera | Premium Artisan Pastries",  description: "Discover exceptional handcrafted pastries made fresh daily with premium local ingredients. Experience authentic artisan baking at A mi manera.",  keywords: "pastry shop, artisan bakery, croissants, fresh pastries, Danish pastries, French pastries",  metadataBase: new URL("https://amimanerabakery.com"),
-  alternates: {
-    canonical: "https://amimanerabakery.com"},
-  openGraph: {
-    title: "A mi manera | Premium Artisan Pastries",    description: "Exceptional handcrafted pastries made fresh daily with premium ingredients.",    url: "https://amimanerabakery.com",    siteName: "A mi manera",    type: "website",    images: [
-      {
-        url: "http://img.b2bpic.net/free-photo/baker-holds-homemade-craft-bread-his-hands_166373-749.jpg",        alt: "A mi manera pastries showcase"},
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",    title: "A mi manera | Premium Artisan Pastries",    description: "Experience exceptional handcrafted pastries made fresh daily.",    images: ["http://img.b2bpic.net/free-photo/baker-holds-homemade-craft-bread-his-hands_166373-749.jpg"],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
+  title: "A mi manera | Artisan Pastries & Bakery",  description: "Fresh, handcrafted pastries made daily with premium ingredients and passion. Visit A mi manera for authentic French pastries and artisan baked goods."};
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <ServiceWrapper>
-        <body
-          className={`${raleway.variable} ${halant.variable} ${inter.variable} antialiased`}
-        >
-          <Tag />
-          {children}
-        
+    <html lang="en">
+      <body className={inter.className}>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -1419,7 +1382,6 @@ export default function RootLayout({
           }}
         />
       </body>
-      </ServiceWrapper>
     </html>
   );
 }
