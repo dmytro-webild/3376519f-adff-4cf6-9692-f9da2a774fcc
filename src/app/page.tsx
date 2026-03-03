@@ -73,7 +73,7 @@ export default function LandingPage() {
             { value: "15+", title: "Years of Expertise" },
             { value: "500+", title: "Happy Customers Daily" },
           ]}
-          imageSrc="http://img.b2bpic.net/free-photo/man-baker-sprinkles-donuts-with-colorful-sweets_1303-32325.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/man-baker-sprinkles-donuts-with-colorful-sweets_1303-32325.jpg?_wi=1"
           imageAlt="A mi manera artisan bakery kitchen"
           useInvertedBackground={false}
           mediaAnimation="slide-up"
@@ -128,7 +128,7 @@ export default function LandingPage() {
               id: "4",              title: "Customization Available",              content: "Special dietary needs? We offer vegan, gluten-free, and sugar-free options. Let us know your preferences, and we'll craft the perfect pastry for you."
             },
           ]}
-          imageSrc="http://img.b2bpic.net/free-photo/man-baker-sprinkles-donuts-with-colorful-sweets_1303-32325.jpg"
+          imageSrc="http://img.b2bpic.net/free-photo/man-baker-sprinkles-donuts-with-colorful-sweets_1303-32325.jpg?_wi=2"
           imageAlt="Artisan pastry preparation"
           useInvertedBackground={true}
           mediaPosition="right"
