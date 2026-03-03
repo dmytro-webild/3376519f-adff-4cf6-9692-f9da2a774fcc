@@ -42,7 +42,7 @@ export default function LandingPage() {
       <div id="hero" data-section="hero">
         <HeroCarouselLogo
           logoText="A mi manera"
-          description="Experience the finest artisan pastries, handcrafted daily with premium ingredients and passion."
+          description="Daily Fresh Pastries Made with Passion. Experience the finest artisan pastries, handcrafted with premium ingredients sourced from local suppliers and time-honored techniques."
           buttons={[
             { text: "Explore Our Menu", href: "#products" },
             { text: "Order Today", href: "#contact" },
@@ -125,7 +125,7 @@ export default function LandingPage() {
               id: "3",              title: "Freshness Guaranteed",              content: "All our pastries are baked fresh daily in our kitchen. Nothing is frozen or pre-made. You'll taste the difference in every bite of our daily creations."
             },
             {
-              id: "4",              title: "Customization Available",              content: "Special dietary needs? We offer vegan, gluten-free, and sugar-free options. Let us know your preferences, and we'll craft the perfect pastry for you."
+              id: "4",              title: "Customization Available",              content: "Special dietary needs? We offer vegan, gluten-free, and sugar-free options. Lead us know your preferences, and we'll craft the perfect pastry for you."
             },
           ]}
           imageSrc="http://img.b2bpic.net/free-photo/man-baker-sprinkles-donuts-with-colorful-sweets_1303-32325.jpg?_wi=2"
